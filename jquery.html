@@ -7,11 +7,162 @@
 			$(document).ready(function(){
 			
 				/* Standard Javascript goes here */
+				// alert("It's working.");
+				
+				
+				var search = $("h1");
+				
+				console.log(search);
+				
+				
+				
+				$("h1").click(function(){
+				
+					console.log("whoa...");
+					$("h1").addClass("fancy");
+					$("h2").removeClass("fancy");
+				
+				});
+				
+				$("h2").click(function(){
+				
+					console.log("whoa...");
+					$("h1").removeClass("fancy");
+					$("h2").addClass("fancy");
+				
+				});
+				
+				
+				
+				$(".on").click(function(){
+				
+					console.log("sitting");
+					$(".beluga").removeClass("fly");
+					$(".beluga").removeClass("stand");
+					$(".beluga").addClass("sit");
+				
+				});
+				
+				
+				$(".off").click(function(){
+				
+					console.log("standing");
+					$(".beluga").removeClass("sit");
+					$(".beluga").removeClass("stand");
+					$(".beluga").addClass("fly");
+				
+				});
+				
+				
+				$(".dim").click(function(){
+				
+					console.log("flying");
+					$(".beluga").removeClass("fly");
+					$(".beluga").removeClass("sit");
+					$(".beluga").addClass("stand");
+				
+				});
+				
+				
+				
+				
 			
 			});
 		</script>
+		<style>
+		
+		.light {
+		background-color:white;
+		}
+		
+		.dark {
+		background-color:black;
+		}
+		
+		.gray {
+		background-color:gainsboro;
+		}
+		
+		h1 {
+		color:orange;
+		}
+		
+		.fancy {
+		border:3px solid green;
+		}
+		
+		.switch {
+		color:green;
+		}
+		
+		.beluga {
+		width:300px;
+		height:300px;
+		float:right;
+		}
+		
+		.sit {
+		background-image:url(images/sit.jpg);
+		background-repeat:no-repeat;
+		}
+		
+		.stand {
+		background-image:url(images/stand.jpg);
+		background-repeat:no-repeat;
+		}
+		
+		.fly {
+		background-image:url(images/fly.jpg);
+		background-repeat:no-repeat;
+		}
+		
+		.header {
+		width: 200px;
+		margin-right:50px;
+		float:left;
+		
+		}
+		
+		.switch {
+		width:200px;
+		float:left;
+		
+		}
+		
+		
+		
+		</style>
 	</head>
 	<body>
-	
+		
+		<div class="header">
+			<h1>Marine Biology</h1>
+			<h2 class="fancy">Flight of the Beluga</h2>
+		</div>
+		
+		
+		
+		<div class="switch">		
+		
+			<div class="off switch">
+				<p> OFF </p>
+			</div>
+			
+			<div class="dim switch">
+				<p> dim... </p>
+			</div>
+			
+			<div class="on switch">
+				<p> ON </p>
+			</div>
+		</div>
+		
+		<div class="beluga sit">
+		</div>
+		
+		
+		
+		
+		
 	</body>
 </html>

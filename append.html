@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>append Example</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function(){
+			
+				
+				var itemNum = 3;
+				var newItem;
+				
+				$("ul").click(function(){
+				
+					newItem = "<li>This is item number " + itemNum + ".</li>";
+					$("ul").append(newItem);
+					itemNum++;
+					
+				});
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			});
+		</script>
+	</head>
+	<body>
+	
+		<ul>
+			<li>A list item</li>
+			<li>A second list item</li>
+		</ul>
+		
+		
+	</body>
+</html>
